@@ -18,7 +18,7 @@ params:
 
   footer_credits_line: |
     Powered by the <a href="https://nix-darwin.org/">Nix Darwin</a> |
-    <a href="https://github.com/mipmip/home-manager-option-search#credits">Credits</a> |
+    <a href="https://github.com/nix-darwin/options#credits">Credits</a> |
     <a href="https://nix-darwin.org/">Nix Darwin Documentation</a>
 
   footer_copyright_line: |

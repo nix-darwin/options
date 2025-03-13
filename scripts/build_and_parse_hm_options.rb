@@ -72,4 +72,4 @@ File.open(filename,"w") do |f|
     f.write(outobj.to_json)
 end
 
-puts "Finished parsing home manager options."
+puts "Finished parsing nix darwin options."
