@@ -16,7 +16,7 @@
 Find [nix-darwin](https://github.com/nix-darwin/darwinpkgs) options quickly using the web interface.
 
 > [!NOTE]
-> This repository is actually adopted version of [mipmip's home-manager-option-search](https://github.com/mipmip/home-manager-option-search). He deserves most of the credits for this work. We just decided to revive his efforts for the nix-darwin community.
+> This repository is actually adopted version of [mipmip's home-manager-option-search](https://github.com/mipmip/home-manager-option-search). He deserves most of the credits for this work. We just decided to use his efforts for the nix-darwin community.
 
 ## Maintainers Notes
 
