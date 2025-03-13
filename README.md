@@ -1,14 +1,22 @@
-# Nix Darwin Options Search
+<p align="center">
+    <img src=".github/assets/header.png" alt="Nix Darwin's {Options}">
+</p>
 
-## Home Manager Options Search has moved
+<p align="center">
+    <h3 align="center">Nix Darwin options search via web.</h3>
+</p>
 
-The new location is <a href="https://home-manager-options.extranix.com/">HOME-MANAGER-OPTIONS.EXTRANIX.COM</a>
+<p align="center">
+    <img align="center" src="https://img.shields.io/github/languages/top/nix-darwin/options?style=flat&logo=nixos&logoColor=ffffff&labelColor=242424&color=242424" alt="Top Used Language">
+    <a href="https://github.com/nix-darwin/options/actions/workflows/update.yml"><img align="center" src="https://img.shields.io/github/actions/workflow/status/nix-darwin/options/update.yml?style=flat&logo=github&logoColor=ffffff&labelColor=242424&color=242424" alt="Update CI"></a>
+</p>
 
-## Please update your bookmarks
+## About
 
-Find [nix darwin](https://github.com/nix-darwin/darwinpkgs) options quickly.
+Find [nix-darwin](https://github.com/nix-darwin/darwinpkgs) options quickly using the web interface.
 
-![](static/images/homemanageroptionsearch.gif)
+> [!NOTE]
+> This repository is actually adopted version of [mipmip's home-manager-option-search](https://github.com/mipmip/home-manager-option-search). He deserves most of the credits for this work. We just decided to revive his efforts for the nix-darwin community.
 
 ## Maintainers Notes
 
@@ -30,13 +38,17 @@ params:
 This file is used by ./scripts/build_and_parse_hm_options.rb and by Hugo when
 generating a new website version.
 
-## Contribute
-
-- Please use the issue tracker or fork this site for PR's
-
-## Credits
+## Credits & Thanks
 
 - Powered by the [Nix Darwin](https://nix-darwin.org/)
 - [JS Search](https://github.com/bvaughn/js-search), efficient, client-side search library for JavaScript and JSON objects
 - Header inspired by the [DocDock](https://docdock.vjeantet.fr/) Hugo Theme.
-- The guy behind the original repo: [home-manager-options](https://github.com/mipmip)
+- The guy behind the original repo: [home-manager-options-extranix](https://github.com/mipmip)
+
+## License
+
+This project inherited Apache-2.0 license from its original repo - see the [LICENSE](license) file for details.
+
+<p align="center">
+    <img src=".github/assets/footer.png" alt="Nix Darwin's {Options}">
+</p>
