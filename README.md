@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-    <img align="center" src="https://img.shields.io/github/languages/top/nix-darwin/options?style=flat&logo=nixos&logoColor=ffffff&labelColor=242424&color=242424" alt="Top Used Language">
-    <a href="https://github.com/nix-darwin/options/actions/workflows/update.yml"><img align="center" src="https://img.shields.io/github/actions/workflow/status/nix-darwin/options/update.yml?style=flat&logo=github&logoColor=ffffff&labelColor=242424&color=242424" alt="Update CI"></a>
+    <img align="center" src="https://img.shields.io/github/languages/top/nix-darwin/options?style=flat&logo=nixos&logoColor=5277C3&labelColor=ffffff&color=ffffff" alt="Top Used Language">
+    <a href="https://github.com/nix-darwin/options/actions/workflows/update.yml"><img align="center" src="https://img.shields.io/github/actions/workflow/status/nix-darwin/options/update.yml?style=flat&logo=github&logoColor=5277C3&labelColor=ffffff&color=ffffff" alt="Update CI"></a>
 </p>
 
 ## About
