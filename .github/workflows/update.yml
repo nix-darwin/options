@@ -1,0 +1,43 @@
+name: "parse and deploy"
+on:
+  schedule:
+    - cron: "05 4 * * *"
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: parse options and create search
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: extract-options-master (unstable)
+        run: ./scripts/build_and_parse_hm_options.rb
+
+      - name: update gitignore
+        run: echo result > .gitignore
+
+      - name: extract-options-release-24.11 (new-stable)
+        env:
+          HM_RELEASE: nix-darwin-24.11
+        run: ./scripts/build_and_parse_hm_options.rb
+
+      # - name: extract-options-release-24.05 (stable)
+      #   env:
+      #     HM_RELEASE: release-24.05
+      #   run: ./scripts/build_and_parse_hm_options.rb
+
+      - name: Build Hugo
+        run: nix run nixpkgs#hugo -- --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: pages-${{ github.ref_name }}
+          publish_dir: ./public
