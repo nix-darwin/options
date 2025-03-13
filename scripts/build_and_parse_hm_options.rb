@@ -35,17 +35,17 @@ end
 in_file_conf = File.read("./config.yaml")
 config = YAML.load(in_file_conf)
 
-if not ENV['HM_RELEASE']
-  ENV['HM_RELEASE'] = "master"
-elsif ENV['HM_RELEASE'] == "stable"
-  ENV['HM_RELEASE'] = config['params']['release_current_stable']
+if not ENV['ND_RELEASE']
+  ENV['ND_RELEASE'] = "master"
+elsif ENV['ND_RELEASE'] == "stable"
+  ENV['ND_RELEASE'] = config['params']['release_current_stable']
 end
 
-puts "Cleanup and Building Nix Darwin options from #{ENV['HM_RELEASE']}"
+puts "Cleanup and Building Nix Darwin options from #{ENV['ND_RELEASE']}"
 
 `rm -Rf result`
-`nix build github:nix-darwin/darwinpkgs/${HM_RELEASE}#optionsJSON --no-write-lock-file`
-`rm -f ./data/options-${HM_RELEASE}.json`
+`nix build github:nix-darwin/darwinpkgs/${ND_RELEASE}#optionsJSON --no-write-lock-file`
+`rm -f ./data/options-${ND_RELEASE}.json`
 
 in_file = File.read("./result/share/doc/darwin/options.json")
 parsed = JSON.parse(in_file)
@@ -66,7 +66,7 @@ time = Time.new
 outobj["last_update"] = time.utc.strftime("%B %d, %Y at %k:%M UTC")
 outobj["options"] = options_arr
 
-filename = "static/data/options-#{ENV['HM_RELEASE']}.json"
+filename = "static/data/options-#{ENV['ND_RELEASE']}.json"
 
 File.open(filename,"w") do |f|
     f.write(outobj.to_json)

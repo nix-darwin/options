@@ -37,20 +37,32 @@ jobs:
 
       - name: extract-options-release-24.11 (stable)
         env:
-          HM_RELEASE: nix-darwin-24.11
+          ND_RELEASE: nix-darwin-24.11
         run: ./scripts/build_and_parse_hm_options.rb
 
-      # - name: extract-options-release-24.05 (stable)
+      # - name: extract-options-release-25.05 (stable)
       #   env:
-      #     HM_RELEASE: release-24.05
+      #     ND_RELEASE: nix-darwin-25.05
       #   run: ./scripts/build_and_parse_hm_options.rb
 
       - name: Build Hugo
         run: nix run nixpkgs#hugo -- --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: pages-${{ github.ref_name }}
-          publish_dir: ./public
+          path: "./public"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_branch: pages-${{ github.ref_name }}
+      #     publish_dir: ./public
