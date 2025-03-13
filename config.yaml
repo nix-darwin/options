@@ -24,7 +24,7 @@ params:
   footer_copyright_line: |
     Made with ❤️ by <a href="https://github.com/mipmip">Pim Snel</a>, supported by <a href="https://github.com/orzklv">Orzklv</a> - © 2025
 
-  logo: images/home-manager-option-search2.png
+  logo: images/nix-darwin-options.png
 
   github:
     repo: options
