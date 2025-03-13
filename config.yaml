@@ -33,12 +33,12 @@ params:
     show_text: true
 
   main_menu:
-    - name: HM&nbsp;Documentation
+    - name: Nix&nbsp;Darwin&nbsp;Documentation
       url: https://nix-darwin.org/
       icon_class: fa fa-book
 
     - name: Source
-      url: https://github.com/mipmip/home-manager-option-search
+      url: https://github.com/nix-darwin/options
       icon_class: fa fa-github
 
 markup:
