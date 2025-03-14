@@ -3,32 +3,37 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, ... }:
-    let
-      forAllSystems = nixpkgs.lib.genAttrs [ "x86_64-linux" ];
-      pkgsForSystem = system: (import nixpkgs { inherit system; });
-    in
-    {
-      packages = forAllSystems (system:
-        let
-          pkgs = (pkgsForSystem system);
-        in
-        {
-          default = pkgs.runCommand "public" {} ''
-            cd ${./.}
-            ${pkgs.hugo}/bin/hugo --noBuildLock -d $out
-          '';
-        });
+  outputs = {
+    self,
+    nixpkgs,
+    flake-utils,
+    ...
+  } @ inputs:
+    flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [];
+        config.allowUnfree = true;
+      };
+    in {
+      # Nix script formatter
+      formatter = pkgs.alejandra;
 
-      devShells = forAllSystems (system: {
-        default = (pkgsForSystem system).mkShell {
-          buildInputs = with (pkgsForSystem system); [
-            hugo
-            ruby
-          ];
-        };
-      });
-    };
+      # Output compiled website
+      packages.default = pkgs.runCommand "public" {} ''
+        cd ${./.}
+        ${pkgs.hugo}/bin/hugo --noBuildLock --minify -d $out
+      '';
+
+      # Development environment
+      devShells.default = pkgs.mkShell rec {
+        buildInputs = with pkgs; [
+          hugo
+          ruby
+        ];
+      };
+    });
 }
