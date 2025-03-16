@@ -1,4 +1,4 @@
-baseURL: https://options.nix-darwin.org/
+baseURL: https://ndo.xinux.uz/
 languageCode: en-us
 title: Nix Darwin - Option Search
 theme: extranix-options-search
@@ -17,9 +17,9 @@ params:
   custom_header_tags: <div id="eadiv" data-ea-publisher="extranixcom" data-ea-type="text"></div>
 
   footer_credits_line: |
-    Powered by the <a href="https://nix-darwin.org/">Nix Darwin</a> |
-    <a href="https://github.com/nix-darwin/options#credits">Credits</a> |
-    <a href="https://nix-darwin.org/">Nix Darwin Documentation</a>
+    Powered by <a href="https://xinux.uz/">Xinux</a> |
+    <a href="https://github.com/xinux-org/nix-darwin-options?tab=readme-ov-file#credits--thanks">Credits</a> |
+    <a href="https://ndw.xinux.uz/">Nix Darwin Documentation</a>
 
   footer_copyright_line: |
     Made with ❤️ by <a href="https://github.com/mipmip">Pim Snel</a>, supported by <a href="https://github.com/orzklv">Orzklv</a> - © 2025
@@ -34,11 +34,11 @@ params:
 
   main_menu:
     - name: Nix&nbsp;Darwin&nbsp;Documentation
-      url: https://nix-darwin.org/
+      url: https://ndw.xinux.uz/
       icon_class: fa fa-book
 
     - name: Source
-      url: https://github.com/nix-darwin/options
+      url: https://github.com/xinux-org/nix-darwin-options
       icon_class: fa fa-github
 
 markup:

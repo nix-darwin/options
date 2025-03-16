@@ -44,7 +44,7 @@ end
 puts "Cleanup and Building Nix Darwin options from #{ENV['ND_RELEASE']}"
 
 `rm -Rf result`
-`nix build github:nix-darwin/darwinpkgs/${ND_RELEASE}#optionsJSON --no-write-lock-file`
+`nix build github:LnL7/nix-darwin/${ND_RELEASE}#optionsJSON --no-write-lock-file`
 `rm -f ./data/options-${ND_RELEASE}.json`
 
 in_file = File.read("./result/share/doc/darwin/options.json")

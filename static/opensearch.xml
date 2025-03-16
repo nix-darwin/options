@@ -3,7 +3,7 @@
   <ShortName>Nix Darwin - Options Search</ShortName>
   <Description>Find nix darwin options quickly.</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://options.nix-darwin.org/images/favicon.png</Image>
-  <Url type="text/html" template="https://options.nix-darwin.org/?query={searchTerms}"/>
-  <moz:SearchForm>https://options.nix-darwin.org/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://ndo.xinux.uz/images/favicon.png</Image>
+  <Url type="text/html" template="https://ndo.xinux.uz/?query={searchTerms}"/>
+  <moz:SearchForm>https://ndo.xinux.uz/</moz:SearchForm>
 </OpenSearchDescription>
