@@ -1,6 +1,6 @@
-baseURL: https://ndo.xinux.uz/
+baseURL: https://options.nix-darwin.uz/
 languageCode: en-us
-title: Nix Darwin - Option Search
+title: Xinux Nix Darwin - Option Search
 theme: extranix-options-search
 
 params:
@@ -19,22 +19,22 @@ params:
   footer_credits_line: |
     Powered by <a href="https://xinux.uz/">Xinux</a> |
     <a href="https://github.com/xinux-org/nix-darwin-options?tab=readme-ov-file#credits--thanks">Credits</a> |
-    <a href="https://ndw.xinux.uz/">Nix Darwin Documentation</a>
+    <a href="https://nix-darwin.uz/">Nix Darwin Documentation</a>
 
   footer_copyright_line: |
     Made with ❤️ by <a href="https://github.com/mipmip">Pim Snel</a>, supported by <a href="https://github.com/orzklv">Orzklv</a> - © 2025
 
-  logo: images/nix-darwin-options.png
+  logo: images/xinux-nix-darwin-options.png
 
   github:
-    repo: options
-    user: nix-darwin
+    repo: nix-darwin-options
+    user: xinux-org
     show_count: true
     show_text: true
 
   main_menu:
     - name: Nix&nbsp;Darwin&nbsp;Documentation
-      url: https://ndw.xinux.uz/
+      url: https://nix-darwin.uz/
       icon_class: fa fa-book
 
     - name: Source

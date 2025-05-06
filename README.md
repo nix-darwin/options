@@ -1,9 +1,9 @@
 <p align="center">
-    <img src=".github/assets/header.png" alt="Nix Darwin's {Options}">
+    <img src=".github/assets/header.png" alt="Xinux Nix Darwin's {Options}">
 </p>
 
 <p align="center">
-    <h3 align="center">Nix Darwin options search via web.</h3>
+    <h3 align="center">Xinux Nix Darwin options search via web.</h3>
 </p>
 
 <p align="center">
@@ -13,14 +13,14 @@
 
 ## About
 
-Find [nix-darwin](https://github.com/LnL7/nix-darwin) options quickly using the web interface.
+Find [xinux-nix-darwin](https://github.com/xinux-org/nix-darwin) options quickly using the web interface.
 
 > [!NOTE]
-> This repository is actually adopted version of [mipmip's home-manager-option-search](https://github.com/mipmip/home-manager-option-search). He deserves most of the credits for this work. We just decided to use his efforts for the nix-darwin community.
+> This repository is actually adopted from original version [mipmip's home-manager-option-search](https://github.com/mipmip/home-manager-option-search). He deserves most of the credits for this work. We just decided to use his efforts for the nix-darwin community.
 
 ## Maintainers Notes
 
-After a new NixOS and Nix Darwin release, update the release info in the Hugo
+After a new Nix Darwin release, update the release info in the Hugo
 config:
 
 Edit `config.yaml`, and update the following...
@@ -50,5 +50,5 @@ generating a new website version.
 This project inherited Apache-2.0 license from its original repo - see the [LICENSE](license) file for details.
 
 <p align="center">
-    <img src=".github/assets/footer.png" alt="Nix Darwin's {Options}">
+    <img src=".github/assets/footer.png" alt="Xinux Nix Darwin's {Options}">
 </p>
