@@ -6,3 +6,4 @@ data/options-release-23.11.json
 data/options-master.json
 .hugo_build.lock
 .direnv
+public
