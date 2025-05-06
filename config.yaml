@@ -19,7 +19,7 @@ params:
   footer_credits_line: |
     Powered by <a href="https://xinux.uz/">Xinux</a> |
     <a href="https://github.com/xinux-org/nix-darwin-options?tab=readme-ov-file#credits--thanks">Credits</a> |
-    <a href="https://nix-darwin.uz/">Nix Darwin Documentation</a>
+    <a href="https://nix-darwin.uz/">Xinux Nix Darwin Documentation</a>
 
   footer_copyright_line: |
     Made with ❤️ by <a href="https://github.com/mipmip">Pim Snel</a>, supported by <a href="https://github.com/orzklv">Orzklv</a> - © 2025
