@@ -30,9 +30,6 @@ jobs:
       - name: Install Nix on da machine
         uses: DeterminateSystems/nix-installer-action@main
 
-      - name: Use nix cache via GitHub
-        uses: DeterminateSystems/magic-nix-cache-action@main
-
       - name: Extract Options Master (unstable)
         run: ./scripts/build_and_parse_hm_options.rb
 
