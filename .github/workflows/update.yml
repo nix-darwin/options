@@ -33,7 +33,7 @@ jobs:
       - name: Use nix cache via GitHub
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: extract-options-master (unstable)
+      - name: Extract Options Master (unstable)
         run: ./scripts/build_and_parse_hm_options.rb
 
       - name: Update gitignore
